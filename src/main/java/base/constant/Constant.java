@@ -1,9 +1,9 @@
 package base.constant;
 
 public class Constant {
-	
-	public static String CLIENT_ID = "mkq6DbJdaSrWqQtdopPJ"; //클라이언트 아이디
-	public static String CLIENT_SECRET = "J55qsuXQH1"; //클라이언트 시크릿
+
+	public static String CLIENT_ID = "";
+	public static String CLIENT_SECRET = "";
 	
 	public static String MOVIE_API_URL = "https://openapi.naver.com/v1/search/movie"; //영화 검색 API
 	public static String BLOG_API_URL = "https://openapi.naver.com/v1/search/blog"; //블로그 검색 API

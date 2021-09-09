@@ -14,11 +14,16 @@ import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 import base.constant.Constant;
 
-public class Naver {
+@Configuration
 
+public class Naver {
+	
 	private static final Logger logger = LoggerFactory.getLogger(Naver.class);
 	
 	public String getSearchInfo(String url, HashMap<String, String> params) {
