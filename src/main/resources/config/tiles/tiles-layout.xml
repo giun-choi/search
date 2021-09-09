@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- 오픈 페이지 -->
+	<definition name="openForm" template="/WEB-INF/tiles/open/layout.jsp">
+	    <put-attribute name="center" value="" />
+	</definition>
+	
+	<!-- 전체 페이지 -->
+	<definition name="noAdditionsForm" template="/WEB-INF/tiles/search/noAdditions_layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/tiles/search/header.jsp" />
+		<put-attribute name="section" value="/WEB-INF/tiles/search/section.jsp" />
+	    <put-attribute name="center" value="" />
+	</definition>
+	
+	<!-- 검색 페이지 -->
+	<definition name="searchForm" template="/WEB-INF/tiles/search/layout.jsp">
+		<put-attribute name="header" value="/WEB-INF/tiles/search/header.jsp" />
+		<put-attribute name="section" value="/WEB-INF/tiles/search/section.jsp" />
+	    <put-attribute name="center" value="" />
+	    <put-attribute name="footer" value="/WEB-INF/tiles/search/footer.jsp" />
+	</definition>
+
+</tiles-definitions>

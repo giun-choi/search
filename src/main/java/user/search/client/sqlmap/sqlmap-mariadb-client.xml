@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="user.search.client">
+
+	<!-- 클라이언트 검색정보 저장 -->
+	<insert id="setSearchWord" parameterType="user.search.client.service.ClientVO">
+		insert into search_info
+	 		(
+	 			client_ip
+	 			, menu
+	 			, search_word
+	 			, reg_date
+	 		)
+ 		values
+	 		(
+	 			#{client_ip}
+	 			, #{menu}
+	 			, #{search_word}
+	 			, now()
+	 		)
+	</insert>
+	
+	<!-- 클라이언트 클릭정보 저장 -->
+	<insert id="setClickLink" parameterType="user.search.client.service.ClientVO">
+		insert into click_info
+	 		(
+	 			client_ip
+	 			, menu
+	 			, search_word
+	 			, click_link
+	 			, reg_date
+	 		)
+ 		values
+	 		(
+	 			#{client_ip}
+	 			, #{menu}
+	 			, #{search_word}
+	 			, #{click_link}
+	 			, now()
+	 		)
+	</insert>
+	
+</mapper>

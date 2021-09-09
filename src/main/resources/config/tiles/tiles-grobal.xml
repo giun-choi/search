@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>			
+
+	<!-- 메인 페이지 -->
+	<definition name="user/search/main" extends="openForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/main.jsp" />
+	</definition>
+
+	<!-- 전체 페이지 -->
+	<definition name="user/search/integrated" extends="noAdditionsForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/integrated.jsp" />
+	</definition>
+	
+	<!-- 블로그 페이지 -->
+	<definition name="user/search/blog" extends="searchForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/blog.jsp" />
+	</definition>
+	
+	<!-- 책 페이지 -->
+	<definition name="user/search/book" extends="searchForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/book.jsp" />
+	</definition>
+	
+	<!-- 카페글 페이지 -->
+	<definition name="user/search/cafearticle" extends="searchForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/cafearticle.jsp" />
+	</definition>
+	
+	<!-- 전문자료 페이지 -->
+	<definition name="user/search/doc" extends="searchForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/doc.jsp" />
+	</definition>
+	
+	<!-- 오타변환 페이지 -->
+	<definition name="user/search/errata" extends="searchForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/errata.jsp" />
+	</definition>	
+	
+	<!-- 백과 사전 페이지 -->
+	<definition name="user/search/encyc" extends="searchForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/encyc.jsp" />
+	</definition>	
+
+	<!-- 이미지 페이지 -->
+	<definition name="user/search/image" extends="searchForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/image.jsp" />
+	</definition>
+	
+	<!-- 지식 iN 페이지 -->
+	<definition name="user/search/kin" extends="searchForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/kin.jsp" />
+	</definition>
+	
+	<!-- 지역 페이지 -->
+	<definition name="user/search/local" extends="noAdditionsForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/local.jsp" />
+	</definition>
+	
+	<!-- 영화 페이지 -->
+	<definition name="user/search/movie" extends="searchForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/movie.jsp" />
+	</definition>		
+	
+	<!-- 뉴스 페이지 -->
+	<definition name="user/search/news" extends="searchForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/news.jsp" />
+	</definition>
+	
+	<!-- 쇼핑 페이지 -->
+	<definition name="user/search/shop" extends="searchForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/shop.jsp" />
+	</definition>
+	
+	<!-- 웹문서 페이지 -->
+	<definition name="user/search/webkr" extends="searchForm">
+	    <put-attribute name="center" value="/WEB-INF/jsp/user/search/webkr.jsp" />
+	</definition>			
+
+</tiles-definitions>
